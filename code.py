@@ -14,7 +14,8 @@ data.head(10)
 
 
 # --------------
-#Code starts here
+#Code starts here 
+#Happy coding
 data['Better_Event']=np.where(data['Total_Summer']>data['Total_Winter'],'Summer',np.where(data['Total_Summer']==data['Total_Winter'],'Both','Winter'))
 better_event=data['Better_Event'].value_counts().idxmax()
 print(better_event)
